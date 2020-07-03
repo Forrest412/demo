@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    /> -->
+    <meta
+      name="viewport"
+      content="width=750,target-densitydpi=device-dpi,user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="author" content="evua" />
+    <title>X50 Series头像生成器</title>
+    <link rel="stylesheet" href="css/public.css?v=45" />
+  </head>
+
+  <body>
+    <!-- home -->
+    <div class="home">
+      <div class="bg dn"></div>
+      <div class="zh">
+        <canvas id="myCanvas" class="canvs"></canvas>
+        <img src="" class="create" />
+        <div class="logo"><img src="./img/logo.png" /></div>
+        <div class="p1-1"><img src="./img/p1-1.png" /></div>
+
+        <div class="xhz">
+          <div class="p1-9"><img src="https://lh3.googleusercontent.com/dvy0iDr8_3lcyvhQZmQHRvoNlXfy-Q0dbxtoPhuUdtFSZh-0m0OkMBX1X8qVFsmF61o7zPzzo7Ak0Z0VcLA66vd4hTvOfPQ6x1x4XEywjqvUYdL5NBf1rBA_SVVJbPdO0S8SImgg5zkKWHzyf_Yh-S5o8aWivwkm41m00x67t9P-hEeOSPNPX8Sr858BOT9jJ0xKcECeTdCUiAJHDyhEA23RFtl7ZaAqSG93vD_EzJ0fzODrLusWM3kIcDMyHowgpUlvZ3GYLzqA8IODL_xb4jco69gm4GSkmAfS46ESBnq4fcBBrmyd32-MjGGsUoIbiK7tei4I8LArQnZnFxIz2GqkvZTMVvd4cU34Cz4rERxG8CgEo8eN8nCAY93XujxVexZzZxJDUFKXuWMb3XOR3rO7kZi4q47lL6_hORngvkaEeNWv_5u4SGt_sp0C83p_8vr62vhCDiVteFv2l6PO3qfEDz25waK3XIdo7vmvBZNa0sjRon2ae6deijw6bVNjCAT668timPZCql9v76PFCTwJdu6T80vXNFQ9HfHj6SE8-HxePZsSR-kS5PJcghEeKObnCL-axg6QOYfB1e3YFB6L0ftu4FZZTGSw3-CTWM0DeDE87QNkyR6ijO0YXEi_Wgfzw9ntrMrRycdss6SRZ3NCFJUWRgk105Xci5RkMAqlEyx8GCdyVBPNbAZ8xZUk5F2M=w523-h391-p-k-nu-ft" /></div>
+          <div class="p1-3"><img src="./img/p1-3.png" /></div>
+          <div class="p1-4"><img src="./img/p1-4.png" /></div>
+
+          <div class="p-text">
+            <div class="left dn"><img src="./img/p2-1.png" /></div>
+            <p class="wz" id="money1"></p>
+            <div class="right dn"><img src="./img/p2-2.png" /></div>
+          </div>
+        </div>
+
+        <div class="p2-3 dn"><img src="./img/p2-3.png"/></div>
+
+        <div class="p1-10">
+          <img src="./img/p1-10.png" />
+
+          <input type="text" maxlength="34" class="sr name" autocomplete="off" id="money">
+
+          <img src="./img/p1-11.png" class="p1-11" />
+        </div>
+
+        <div class="p1-8"><img src="./img/p1-8.png" /></div>
+        <div class="p2-5 dn"><img src="./img/p2-5.png" /></div>
+      </div>
+
+    </div>
+
+    <div id="orientLayer" class="mod-orient-layer">
+      <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc"></div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src=" //res.wx.qq.com/open/js/jweixin-1.6.0.js" ></script></script>
+    <script src=" //common.yscase.com/js/WechatJSSDK.js" ></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/pxloader-images.min.js"></script>
+    <script src="js/jquery.luckdraw.js"></script>
+    <script src="js/app.js?v=119"></script>
+
+    <script type="text/javascript">
+      let jssdk = new WechatJSSDK();
+      jssdk.share({
+        title: "一键定制vivo X50 Series专属头像",
+        desc: "Click to customize your X50 Series avatar",
+        link: "http://xtc.h5.yscase.com/vivo50/",
+        imgUrl: "http://xtc.h5.yscase.com/vivo50/img/p1-12.png",
+        complete: function () {
+          // 分享完做什么
+        },
+      });
+    </script>
+  </body>
+</html>
